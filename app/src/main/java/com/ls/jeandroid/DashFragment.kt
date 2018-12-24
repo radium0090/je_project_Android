@@ -9,14 +9,14 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 
 
-class DashFragment: Fragment() {
+class DashFragment: BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         super.onCreateView(inflater, container, savedInstanceState)
         val v = inflater.inflate(R.layout.fragment_dashboard, container, false)
         val mWebView: WebView = v.findViewById(R.id.dash_webview) as WebView
-        mWebView.webViewClient = WebViewClient()
-        mWebView.loadUrl("https://quinz.me")
+        initWebView(mWebView)
+        mWebView.loadUrl("https://quinz.me/cart/")
         return v
     }
 }
