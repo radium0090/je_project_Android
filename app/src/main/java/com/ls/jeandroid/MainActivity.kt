@@ -26,6 +26,13 @@ class MainActivity : AppCompatActivity() {
 
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_cart -> {
+                supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout, CartFragment())
+                        .commit()
+
+                return@OnNavigationItemSelectedListener true
+            }
             R.id.navigation_notifications -> {
                 supportFragmentManager.beginTransaction()
                         .replace(R.id.frameLayout, MyFragment())

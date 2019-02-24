@@ -13,7 +13,7 @@ class MyFragment: BaseFragment() {
         val v = inflater.inflate(R.layout.fragment_my, container, false)
         val mWebView: WebView = v.findViewById(R.id.my_webview) as WebView
         initWebView(mWebView)
-        mWebView.loadUrl("https://quinz.me/my-account/")
+        mWebView.loadUrl("https://japee.tokyo/my-account/")
         return v
     }
 
