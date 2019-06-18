@@ -32,6 +32,7 @@ class HomeFragment: Fragment() {
     @SuppressLint("SetJavaScriptEnabled")
     fun setWebView(webView: WebView) {
         val setting = webView.settings
+        
         setting.javaScriptEnabled = true
         setting.javaScriptCanOpenWindowsAutomatically = true
         setting.allowFileAccess = true// 设置允许访问文件数据
